@@ -1,12 +1,12 @@
-# A Student's Guide to AI Pair Programming
+# A student's guide to AI pair programming (note: this is adapted from various online sources and edited using AI tools)
 
-## 1. Why Good Prompts Matter
+## 1. Why good prompts matter
 
 Working with an AI pair programmer is like having a conversation. The quality of its answers depends heavily on the quality of your questions. A well-written prompt will get you useful, relevant code and explanations. A vague or confusing prompt will lead to generic, unhelpful, or incorrect responses.
 
 This guide will teach you how to "engineer" your prompts to get the best possible results from your AI partner. Learning this skill is a key objective of this assignment.
 
-## 2. The Four C's of Effective Prompting
+## 2. The four C's of effective prompting
 
 A good prompt gives the AI the information it needs to be a helpful partner. A simple way to remember this is with the "Four C's": Context, Clarity, Conciseness, and Constraints.
 
@@ -17,49 +17,49 @@ A good prompt gives the AI the information it needs to be a helpful partner. A s
 
 ---
 
-## 3. Example Scenarios
+## 3. Example scenarios
 
 Here is how you can apply the Four C's in different situations during your project.
 
-### Scenario 1: Starting the Project
+### Scenario 1: Starting the project
 
 Your first prompt is crucial for setting the **Context**.
 
-- **A Bad Prompt:**
+- **A bad prompt:**
   > "how do i make a temperature thing"
 
-- **A Good Prompt (using the Four C's):**
+- **A good prompt (using the four C's):**
   > **[Context]:** "Hello! I'm a student learning Python and I'm using a **Raspberry Pi Pico** with the **Thonny IDE**. I have a **DHT11 temperature sensor** connected to **GP15**.
   > **[Clarity]:** I need to write a MicroPython script that reads the temperature and humidity from the sensor.
   > **[Conciseness]:** Can you provide the basic code to do just that one thing?
   > **[Constraints]:** Please include comments explaining each part of the code. Don't worry about printing to a display or saving to a file yet."
 
-### Scenario 2: Asking for a Specific Function
+### Scenario 2: Asking for a specific function
 
 When you need a new feature, be **Clear** and **Concise**.
 
 - **A Bad Prompt:**
   > "now make it do csv"
 
-- **A Good Prompt:**
+- **A good prompt:**
   > **[Context]:** "Here is my current MicroPython code: `[paste your current, working code]`
   > **[Clarity]:** I want to write the temperature and humidity readings to a **CSV file** on the Pico called `data.csv`. The file should have three columns: `timestamp`, `temperature_C`, and `humidity`.
   > **[Conciseness]:** Can you show me how to modify my main loop to open the file, append a new line with the data, and then close it?"
 
-### Scenario 3: Debugging an Error
+### Scenario 3: Debugging an error
 
 When you have a bug, give the AI all the information. The error message itself is critical **Context**.
 
-- **A Bad Prompt:**
+- **A bad prompt:**
   > "my code is broken"
 
-- **A Good Prompt:**
+- **A good prompt:**
   > **[Context]:** "I'm using a **Raspberry Pi Pico** and my code was working, but now it's giving me an error. Here is the full error message I see in Thonny: `[paste the complete, exact error message]`.
   > Here is the full script that is causing the error: `[paste your full script]`.
   > **[Clarity]:** The error seems to happen on the line `[mention the line number or the line of code]`. I think the problem is related to converting the sensor reading to a string, but I'm not sure.
   > **[Constraints]:** Can you explain what this error means and suggest two or three possible ways I could fix it?"
 
-## 4. What to Do When the AI is Wrong
+## 4. What to do when the AI is wrong
 
 **AI models are not perfect.** They will sometimes:
 - Make up facts or library names ("hallucinate").

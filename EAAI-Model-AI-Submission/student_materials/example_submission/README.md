@@ -1,4 +1,4 @@
-# Example Submission: Temperature Monitor and Logger
+# Example submission: Temperature monitor and logger
 
 This directory contains a complete example submission for the "Temperature Monitor and Logger" project. It is meant to show you what a high-quality submission looks like.
 
@@ -12,4 +12,4 @@ This directory contains a complete example submission for the "Temperature Monit
 
 - **`example_ai_transcript.md`**: This file contains snippets of a conversation with an AI pair programmer. It demonstrates how to ask good questions and how to use the AI's responses. Your submission should be a PDF of your *entire* conversation.
 
-- **`hardware_video.mp4` (Placeholder)**: Your submission must include a short (1-2 minute) video of your hardware working. This file is a placeholder to remind you to include one. Your video should clearly show your circuit and the output of your code (e.g., the serial monitor showing temperature readings).
+- **`hardware_video.mp4` (placeholder)**: Your submission must include a short (1-2 minute) video of your hardware working. This file is a placeholder to remind you to include one. Your video should clearly show your circuit and the output of your code (e.g., the serial monitor showing temperature readings).
