@@ -1,3 +1,4 @@
+# AI GENERATED CODE USED FOR EXAMPLE
 # Temperature Monitor and Logger for Raspberry Pi Pico
 #
 # This script reads temperature and humidity from a DHT11 sensor

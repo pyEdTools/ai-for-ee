@@ -1,4 +1,4 @@
-/*
+/*AI GENERATED CODE USED FOR EXAMPLE
   Temperature Monitor and Logger for Arduino Uno
 
   This sketch reads temperature and humidity from a DHT11 sensor
