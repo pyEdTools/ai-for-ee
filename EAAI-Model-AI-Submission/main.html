@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model AI Assignment: AI Pair Programming with Hardware-in-the-Loop Verification</title>
+
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 2em; max-width: 800px; margin-left: auto; margin-right: auto; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 1em; }
+        th, td { border: 1px solid #dddddd; text-align: left; padding: 8px; vertical-align: top; }
+        th { background-color: #f2f2f2; }
+        code { background-color: #eee; padding: 2px 4px; border-radius: 3px; font-family: monospace; }
+        pre { background-color: #eee; padding: 1em; border-radius: 3px; overflow-x: auto; }
+        h1, h2, h3 { border-bottom: 1px solid #ccc; padding-bottom: 0.3em; }
+    </style>
+
+</head>
+<body>
+    <h1>Model AI Assignment: AI Pair Programming with Hardware-in-the-Loop Verification</h1>
+<p><strong>Note: The primary entry point for this submission package is the <code>index.html</code> file.</strong></p>
+<p>This document serves as a detailed, single-file overview of the assignment proposal.</p>
+<hr />
+<h2>Abstract</h2>
+<p>This paper introduces a new project-based assignment for introductory AI and programming courses. It positions Large Language Models (LLMs) as collaborative pair programmers, but ensures student agency by requiring feasible, tangible hardware outputs. The goal is to have students get their hands dirty with tasks that an AI cannot do for them.</p>
+<p>The assignment asks students to pick a personal project and build it with an AI partner. The key step is validating the final code with a real hardware setup. This moves beyond pure simulation. It compels students to ground their code, and their understanding, in real-world interactions.</p>
+<p>Throughout the project, students learn practical skills like prompt engineering, iterative development, and AI-assisted debugging. They keep a reflection journal and submit their AI chats, showing their thought process. Using low-cost hardware ensures students are active participants. They must understand, adapt, and verify the AI's output, not just copy it. This fosters a deeper, more authentic learning experience and shows students how to leverage AI tools effectively. The assignment is highly adaptable, with many project options to promote engagement and creativity.</p>
+<hr />
+<h2>Content for <code>index.html</code></h2>
+<p>This section provides the metadata required for the <a href="http://modelai.gettysburg.edu/">Model AI Assignments</a> website.</p>
+<ul>
+<li>
+<p><strong>Summary:</strong> This assignment challenges students to build a complete, personalized project by partnering with an AI assistant. Students learn to use the AI as a pair programmer to brainstorm, write, and debug code. The key requirement is that the final project must be verified using physical hardware, ensuring that students can connect their software to real-world outcomes. The process emphasizes practical skills like prompt engineering and critical thinking, and students document their entire journey in a reflection journal.</p>
+</li>
+<li>
+<p><strong>Topics:</strong></p>
+<ul>
+<li><strong>Primary AI Topic:</strong> AI as a Tool, Human-AI Interaction, AI-assisted Development.</li>
+<li><strong>Secondary AI Topics:</strong> Prompt Engineering, AI-assisted Debugging, LLM Capabilities and Limitations.</li>
+<li><strong>Computer Science Topics:</strong> Introductory Python Programming, Hardware Interfacing, APIs, Data Handling, Simulation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Audience:</strong> This assignment is designed for undergraduate students in their first or second year of study. It is suitable for <strong>CS1/CS2</strong> courses, introductory programming courses for engineers (e.g., "AI for EE"), or introductory AI courses that want to include a practical, hands-on component. No prior experience with AI or hardware is assumed.</p>
+</li>
+<li>
+<p><strong>Difficulty:</strong> <strong>Easy to Medium.</strong> The difficulty is scalable based on the project chosen. The core concepts are accessible to beginners, while more advanced students can choose projects with greater complexity.</p>
+</li>
+<li>
+<p><strong>Strengths:</strong></p>
+<ul>
+<li><strong>High Engagement:</strong> Students work on personalized projects they choose, increasing motivation.</li>
+<li><strong>Practical Skills:</strong> Teaches the modern skill of using AI tools effectively and responsibly in a development workflow.</li>
+<li><strong>Authentic Assessment:</strong> Hardware verification provides a clear, tangible success metric and prevents students from submitting AI-generated code without understanding it.</li>
+<li><strong>Demystifies AI:</strong> Provides a concrete understanding of what AI can and cannot do in a programming context.</li>
+<li><strong>Flexibility:</strong> Easily adaptable to different course levels, topics, and timeframes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Weaknesses:</strong></p>
+<ul>
+<li><strong>Hardware Requirement:</strong> Requires students to have access to low-cost microcontroller kits ($20-$30), which could be a barrier.</li>
+<li><strong>AI Variability:</strong> The performance and responses of AI models can be unpredictable.</li>
+<li><strong>Instructor Overhead:</strong> Requires instructors to be comfortable with guiding students through a less deterministic process than traditional assignments.</li>
+<li><strong>Potential for Over-Reliance:</strong> Instructors must actively guide students to think critically and not just copy-paste AI output.</li>
+</ul>
+</li>
+<li>
+<p><strong>Dependencies:</strong></p>
+<ul>
+<li><strong>Software:</strong> Python 3.x, access to a web-based LLM (e.g., ChatGPT, Google Gemini), standard Python libraries (<code>requests</code>, <code>matplotlib</code>, etc., depending on the project).</li>
+<li><strong>Hardware:</strong> A low-cost microcontroller kit. We recommend the Raspberry Pi Pico W or Arduino Uno, along with basic components like LEDs, sensors, and resistors.</li>
+</ul>
+</li>
+<li>
+<p><strong>Variants:</strong></p>
+<ul>
+<li><strong>Group Project:</strong> Can be adapted for pairs or small groups of students.</li>
+<li><strong>Advanced Version:</strong> For upper-level courses, the complexity of the hardware and software can be increased (e.g., using more advanced sensors, requiring communication protocols like MQTT, or analyzing more complex datasets).</li>
+<li><strong>Software-Only Verification:</strong> For courses without a hardware component, the verification step can be replaced with a different form of validation, such as a rigorous unit testing suite, a live user-testing session, or a detailed data validation report against a known dataset.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>Assignment materials</h2>
+<h3>For students</h3>
+<ul>
+<li><strong><code>assignment_description.md</code></strong>: A detailed description of the assignment, learning objectives, and submission requirements. (Adapted from <code>lab9_fall2024.md</code>).</li>
+<li><strong><code>project_ideas.md</code></strong>: A list of curated project ideas with descriptions, hardware suggestions, and estimated costs.</li>
+<li><strong><code>guide_to_ai_prompts.md</code></strong>: A guide with examples of effective and ineffective prompts for interacting with the AI pair programmer.</li>
+<li><strong><code>example_submission/</code></strong>: A complete example submission for one of the projects, including the code, reflection journal, and AI transcript.</li>
+</ul>
+<h3>For instructors</h3>
+<ul>
+<li><strong><code>instructor_guide.md</code></strong>: A guide for instructors on how to run the assignment, common pitfalls to watch for, and tips for grading.</li>
+<li><strong><code>assessment_rubric.md</code></strong>: A detailed rubric for grading the student submissions. See the file in <code>instructor_materials/</code>.</li>
+<li><strong><code>hardware_recommendations.md</code></strong>: A list of recommended hardware kits and components, with links to purchase.</li>
+</ul>
+<hr />
+<h2>Suggestions for use</h2>
+<ul>
+<li><strong>Scaffolding:</strong> Start with a small in-class exercise where all students use an AI to solve the same simple problem before starting the main project.</li>
+<li><strong>Check-ins:</strong> Schedule mandatory check-ins or milestones to ensure students are on track and to discuss their AI interaction strategies.</li>
+<li><strong>Focus on Reflection:</strong> Emphasize that the reflection journal is a major part of the grade. This encourages students to think about <em>how</em> they are working, not just the final product.</li>
+<li><strong>Embrace Failure:</strong> Encourage students to document their errors and failed attempts in their journals. Frame these as learning opportunities.</li>
+</ul>
+<hr />
+<h2>Further readings</h2>
+<ul>
+<li><strong>On AI in Education:</strong></li>
+<li>Lau, J., &amp; Guo, P. (2023). "From 'copilot' to 'driver': A new model for teaching programming with AI." <em>ACM SIGCSE 2023.</em></li>
+<li>
+<p>Denny, P., et al. (2023). "Conversing with AI: A new frontier for computing education." <em>Communications of the ACM.</em></p>
+</li>
+<li>
+<p><strong>On Prompt Engineering:</strong></p>
+</li>
+<li>OpenAI's official guide on prompt engineering: <a href="https://platform.openai.com/docs/guides/prompt-engineering">https://platform.openai.com/docs/guides/prompt-engineering</a></li>
+<li>
+<p>Google's guide on prompt design: <a href="https://ai.google.dev/docs/prompt_best_practices">https://ai.google.dev/docs/prompt_best_practices</a></p>
+</li>
+<li>
+<p><strong>Hardware Documentation:</strong></p>
+</li>
+<li>Raspberry Pi Pico official documentation: <a href="https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html">https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html</a></li>
+<li>Arduino Uno R4 official documentation: <a href="https://docs.arduino.cc/hardware/uno-r4-minima/">https://docs.arduino.cc/hardware/uno-r4-minima/</a></li>
+</ul>
+<hr />
+<h2>Proposed repository structure</h2>
+<p><code>.
+├── LICENSE
+├── README.md
+├── abstract.md
+├── main.md
+├── project_ideas.md
+├── instructor_materials/
+│   ├── instructor_guide.md
+│   ├── assessment_rubric.md
+│   └── hardware_recommendations.md
+└── student_materials/
+    ├── assignment_description.md
+    ├── guide_to_ai_prompts.md
+    └── example_submission/
+        ├── code/
+        │   └── temp_logger.py
+        ├── reflection_journal.pdf
+        ├── ai_transcript.pdf
+        └── hardware_video.mp4</code></p>
+</body>
+</html>
